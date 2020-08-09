@@ -40,7 +40,10 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  //Code here 
+  for(let key in obj){
+    return 
+  }
 }
 
 
