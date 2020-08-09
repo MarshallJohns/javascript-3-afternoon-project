@@ -143,4 +143,3 @@ let bobsTotal = purchases.reduce((acc, e, i, arr) => {
     return acc }
     return acc + e.price
 }, 0); //Code Here
-
