@@ -52,6 +52,16 @@ var employees = [
 
 //Code Here
 
+let employeeUpdater = () => {
+  employees.forEach((e, i, arr) => {
+    if(e.firstName === 'Theo'){
+      arr.splice(i,1)
+    } else if (e.firstName === 'Lorie') {
+      e.department = 'HR'
+    }
+  })
+  return employees
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -70,7 +80,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 //Code Here
 
-
+let removeDuplicates = () => {
+  workplaceAccidents.forEach((e,i) => {
+    workplaceAccidents.filter((e,ind) => {
+      if(e[i] === e[ind+1]){
+        workplaceAccidents.splice(ind,1)
+      }
+    })
+  })
+  return workplaceAccidents
+}
 
 ////////// PROBLEM 3 //////////
 
